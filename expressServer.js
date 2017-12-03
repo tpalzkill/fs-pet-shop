@@ -47,16 +47,10 @@ app.post('/pets', function(req, res){
         return res.sendStatus(500);
       }
 
-      res.set('Content-Type', 'text/plain');
+      res.set('Content-Type', 'application/JSON');
       res.send(pet);
     });
   });
-//   let age = req.body.age;
-//   let type = req.body.type;
-//   let name = req.body.name;
-//
-// json.push(req.body);
-// res.send(req.body);
 })
 
 app.use(function(req, res){
